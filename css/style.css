@@ -489,9 +489,10 @@ template {
   .logo {
     width: 132px;
   }
-  .navbar_top {
+  .navbar-top {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0;
   }
   .navbar_search {
     margin-left: auto;
