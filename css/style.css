@@ -378,13 +378,13 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top_menu-button {
+  display: none;
+}
+
 .navbar_search {
   margin-right: auto;
   margin-left: 108px;
-}
-
-.navbar_menu-button {
-  display: none;
 }
 
 .navbar-bottom {
