@@ -5,11 +5,26 @@
         display: flex
         align-items: center
         justify-content: space-between
+        &_offer
+            margin-left: 14px
+            margin-top: 3px
+        &_name
+            margin-top: 4px
+            margin-bottom: 0
+        &_description
+            margin: 5px 0
     &-name
         font-size: 24px
         line-height: 30px
-        margin-top: 4px
-        margin-bottom: 0
+    &-wrapper
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    &-description
+        font-size: 12px
+        line-height: 15px
+.stars
+    flex-basis: 100%
 .offer
     font-size: 10px;
     line-height: 13px;
@@ -17,3 +32,16 @@
     background-color: $primari
     border-radius: 3px
     color: $light
+.rating
+    max-width: 65px
+    min-height: 45px
+    text-align: center
+    color: $light
+    background-color: $primari
+    border-radius: 4px
+    &_text
+        font-size: 8px
+        line-height: 10px
+    &_counter
+        font-size: 14px
+        line-height: 18px
