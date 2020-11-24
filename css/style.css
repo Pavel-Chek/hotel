@@ -10,7 +10,7 @@ body {
 }
 
 .conteiner {
-  max-width: 1110px;
+  max-width: 1112px;
   margin: auto;
 }
 
@@ -405,7 +405,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #fff;
-  padding: 31px 0;
+  padding: 30px 0;
 }
 
 .navbar_menu_link {
@@ -478,7 +478,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -500,12 +500,17 @@ template {
 }
 
 .hotel-info_name {
-  margin-top: 4px;
+  margin-top: 0;
+  margin-left: 1px;
   margin-bottom: 0;
 }
 
 .hotel-info_description {
-  margin: 5px 0;
+  margin: 0;
+}
+
+.hotel-info_rating {
+  padding-top: 3px;
 }
 
 .hotel-name {
@@ -532,12 +537,16 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-left: 2px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  padding: 4px 10px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #fff;
@@ -545,11 +554,12 @@ template {
 
 .rating {
   max-width: 65px;
-  min-height: 45px;
+  min-height: 47px;
   text-align: center;
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  margin-right: 1px;
 }
 
 .rating_text {
@@ -577,11 +587,13 @@ template {
 .breadcrumb-list_item {
   font-size: 10px;
   line-height: 13px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .breadcrumb-list_item:not(:last-child)::after {
   content: '/';
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .breadcrumb-list_link {
@@ -637,7 +649,8 @@ template {
     display: -ms-flexbox;
     display: flex;
     width: 16px;
-    height: 11px;
+    height: 12px;
+    margin-top: 4px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -691,6 +704,21 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .conteiner {
+    max-width: 280px;
+  }
+  .hotel {
+    padding-top: 0;
+  }
+  .hotel-info_offer {
+    margin-top: 5px;
+  }
+  .stars {
+    margin-right: 15px;
+  }
+  .hotel-info_name {
+    margin-top: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
