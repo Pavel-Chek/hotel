@@ -478,7 +478,7 @@ template {
 }
 
 .hotel {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 70px;
 }
 
@@ -496,7 +496,7 @@ template {
 
 .hotel-info_offer {
   margin-left: 14px;
-  margin-top: 3px;
+  margin-top: 0;
 }
 
 .hotel-info_name {
@@ -506,7 +506,7 @@ template {
 }
 
 .hotel-info_description {
-  margin: 0;
+  margin: 0 0 0 2px;
 }
 
 .hotel-info_rating {
@@ -535,12 +535,20 @@ template {
 }
 
 .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-left: 2px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.star {
+  margin-right: 2px;
 }
 
 .offer {
@@ -554,7 +562,7 @@ template {
 
 .rating {
   max-width: 65px;
-  min-height: 47px;
+  height: 46px;
   text-align: center;
   color: #fff;
   background-color: #EC1F46;
@@ -604,15 +612,30 @@ template {
 @media (max-width: 1200px) {
   .conteiner {
     max-width: 960px;
+    width: 92%;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 840px) {
   .conteiner {
     max-width: 700px;
+    width: 92%;
   }
   .logo {
     width: 132px;
+  }
+  .stars {
+    margin-bottom: 3px;
+  }
+  .hotel-info_description {
+    margin: 0;
+    max-width: 392px;
+  }
+  .hotel-info_rating {
+    padding-top: 1px;
+  }
+  .rating {
+    margin: 0;
   }
   .navbar-top {
     margin-top: 30px;
@@ -636,7 +659,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .conteiner {
     max-width: 576px;
     width: 92%;
@@ -701,7 +724,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 320px) {
   .logo {
     width: 99px;
   }
@@ -711,14 +734,24 @@ template {
   .hotel {
     padding-top: 0;
   }
+  .hotel-name {
+    margin-top: 9px;
+    margin-left: 0;
+  }
+  .navbar-top {
+    margin-top: 23px;
+  }
   .hotel-info_offer {
     margin-top: 5px;
   }
   .stars {
-    margin-right: 15px;
+    margin: 2px 14px 0 0;
   }
-  .hotel-info_name {
-    margin-top: 8px;
+  .breadcrumb {
+    height: 50px;
+  }
+  .offer {
+    margin: 4px 0 0 1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
