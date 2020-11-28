@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
     <header class="navbar">
@@ -114,6 +116,39 @@
                         <button class="slider-button slider-button--prev"></button>
                         <button class="slider-button slider-button--next"></button>
                         <!-- /.swiper-conteiner -->
+                    </div>
+                </div>
+                <div class="hotel-right">
+                    <div class="booking">
+                        <div class="booking_info">
+                            <div class="booking_price">
+                                <span class="booking_start">price starts as</span>
+                                <strong class="booking_pricetag">$ 8,500</strong>
+                                <span class="booking_per-room">per room / night</span>
+                            </div>
+                            <div class="booking-room">
+                                <div class="booking_text">
+                                    <img src="img/user.svg" alt="user_name" class="booking_icon">
+                                    <span class="booking_description">2 x Guests</span>
+                                </div>
+                                <div class="booking_text">
+                                    <img src="img/home.svg" alt="user_name" class="booking_icon">
+                                    <span class="booking_description">1 x Room</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking_call-center">
+                            <span class="booking_heading">Quick Booking</span>
+                            <a href="tel:12100" class="booking_number">
+                                <img src="img/phone-call.svg" alt="phone">
+                                <span class="booking_num">12100</span>
+                            </a>
+                        </div>
+                        <button class="button booking_button">View Other Options</button>
+                    </div>
+                    <!-- /.booking -->
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e7e38c606ce3b9c540cd1a2d7d01a4db5e62ac7fac12124c57ea430bd454b77&amp;width=340&amp;height=210&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
             </div>
