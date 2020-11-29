@@ -481,6 +481,7 @@ template {
 .hotel {
   padding-top: 25px;
   padding-bottom: 70px;
+  height: auto;
 }
 
 .hotel-info {
@@ -838,6 +839,91 @@ template {
   color: inherit;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-size: cover;
+}
+
+.newsletter:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  max-width: 731px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newsletter-title {
+  margin: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title_strong {
+  display: block;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe_input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-right: 75px;
+  padding-left: 33px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.subscribe_button {
+  position: absolute;
+  min-width: 65px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #fff;
+  font-size: 12px;
+}
+
 @media (max-width: 1200px) {
   .conteiner {
     max-width: 960px;
@@ -858,18 +944,28 @@ template {
     height: 100%;
     width: 590px;
   }
-  .hotel-grid {
-    height: 390px;
-  }
   .map {
     margin-top: 12px;
   }
 }
 
 @media (max-width: 1050px) {
-  .conteiner {
+  .conteiner, .newsletter-wrapper {
     max-width: 701px;
     width: 92%;
+  }
+  .newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 97px;
+    padding-top: 96px;
+  }
+  .newsletter-title {
+    line-height: 25px;
+  }
+  .newsletter-title_strong {
+    line-height: 40px;
   }
   .logo {
     width: 132px;
@@ -919,6 +1015,9 @@ template {
     margin: 0;
     width: 100%;
   }
+  .hotel {
+    padding-bottom: 58px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -955,6 +1054,12 @@ template {
   .conteiner {
     max-width: 576px;
     width: 92%;
+  }
+  .newsletter-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .navbar_menu, .navbar_search, .navbar_user {
     display: none;
@@ -1036,7 +1141,7 @@ template {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 576px) {
   .logo {
     width: 99px;
   }
@@ -1072,6 +1177,9 @@ template {
     max-width: 278px;
     height: 179px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel_slider {
     margin-bottom: 22px;
   }
@@ -1083,6 +1191,44 @@ template {
   }
   .booking_num {
     margin-right: 5px;
+  }
+  .map {
+    height: 173px;
+  }
+  .subscribe_input {
+    padding-left: 20px;
+  }
+  .newsletter {
+    padding: 76px 20px 83px 20px;
+  }
+  .newsletter_subscribe {
+    width: 280px;
+    height: 55px;
+  }
+  .newsletter-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 280px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title_strong {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 3px;
+    margin-bottom: 37px;
+  }
+  .newsletter-wrapper {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */
