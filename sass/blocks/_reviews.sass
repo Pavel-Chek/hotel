@@ -1,0 +1,104 @@
+.reviews
+    padding: 40px 0 70px 0
+    &_title
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 70px
+        margin-top: 0
+    &-slider
+        &_item
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 730px
+            margin: 45px auto 0
+            background-color: #fff
+            border-radius: 8px
+            padding: 0 62px 30px 63px
+            position: relative
+            &:before
+                content: ''
+                background-image: url(../img/quote-l)
+                background-repeat: no-repeat
+                left: 62px
+                top: 13px
+                width: 70px
+                height: 47px
+                position: absolute
+            &:after
+                content: ''
+                background-image: url(../img/quote-r)
+                background-repeat: no-repeat
+                right: 62px
+                top: 118px
+                width: 70px
+                height: 47px
+                position: absolute
+        &_profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+            margin-bottom: 32px
+            margin-left: 3px
+        &_avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-bottom: 9px
+            margin-right: 3px
+        &_username
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            color: $primari
+            margin-bottom: 10px
+            margin-top: 0
+        &_date
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 13px;
+            margin-bottom: 4px
+        &_rating
+            display: flex
+            max-width: 48px
+        &_text
+            max-width: 537px
+            min-height: 114px
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
+            margin: auto
+            margin-right: 0
+            margin-left: 1px
+.swiper
+    max-width: 728px
+    &-button
+        position: absolute
+        top: 41%
+        bottom: 59%
+        z-index: 99
+        width: 30px
+        height: 30px
+        border: none
+        cursor: pointer
+        background-color: transparent
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 10px 
+        &--next
+            right: 18px
+            background-image: url(../img/right-2.svg)
+        &:focus
+            outline: none
+        &--prev
+            left: 18px
+            background-image: url(../img/left-2.svg)
