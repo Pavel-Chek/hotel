@@ -104,14 +104,27 @@
             left: 0            
         &--next  
             right: 0
+    .card
+        width: 45%
+        height: 250px
+    .activities
+        padding-top: 50px
+        padding-bottom: 60px
+        &-wrapper
+            flex-wrap: wrap
+        &_card
+            margin-bottom: 20px
+    .card
+        width: 340px
+        height: 255px
+        &_title
+            max-width: 185px
 @media ( max-width: 750px )
     .conteiner
         max-width: 576px
         width: 92%
     .newsletter-wrapper
         flex-direction: column
-    .newsletter
-        
     .navbar
         &_menu, &_search, &_user
             display: none            
@@ -165,7 +178,6 @@
     .map
         width: 100%
     .newsletter-title
-        text-align: center
         &_strong
             padding-bottom: 20px
             padding-top: 10px  
@@ -185,6 +197,12 @@
             right: 45%
             transform: translateX(-50%)  
             margin-right: -65px
+    .card
+        width: 45%
+        height: 255px
+    .activities
+        padding-top: 50px
+        padding-bottom: 60px
 @media ( max-width: 576px )
     .logo
         width: 99px
@@ -228,17 +246,17 @@
     .newsletter
         padding: 76px 20px 83px 20px
         &_subscribe
-            width: 280px
+            max-width: 280px
             height: 55px        
         &-title
             display: flex
-            width: 280px
+            max-width: 280px
             flex-direction: column
             font-style: normal;
             font-weight: 300;
             font-size: 20px;
             line-height: 25px;
-            text-align: left
+            margin-right: 75px
             &_strong
                 font-style: normal;
                 font-weight: 600;
@@ -248,7 +266,7 @@
                 margin-bottom: 37px
                 padding: 0
         &-wrapper
-            width: 280px
+            max-width: 280px
     .reviews
         &_title
             margin-left: 18px
@@ -280,3 +298,17 @@
                 display: none
             &_text
                 width: 219px
+    .card
+        width: 100%
+    .activities
+        padding-top: 0
+        &_title
+            padding-top: 25px
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            margin-bottom: 38px
+        &_card
+            &_three
+                margin-top: 8px
