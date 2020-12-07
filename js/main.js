@@ -24,3 +24,9 @@ var hotelSlider = new Swiper('.swiper-container', {
       prevEl: '.swiper-button--prev',
     },
   });
+
+  var menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", function () {
+    console.log("Click")
+    document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible")
+  })

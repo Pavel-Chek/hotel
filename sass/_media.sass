@@ -172,11 +172,65 @@
     .conteiner
         max-width: 576px
         width: 92%
+    body
+        padding-top: 78px
     .newsletter-wrapper
         flex-direction: column
     .navbar
-        &_menu, &_search, &_user
-            display: none            
+        &--mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+        &_user, &_search
+            &--mobile
+                &_hidden
+                    display: none
+                &_visible
+                    display: flex   
+        &_user
+            flex-direction: column
+            justify-content: center  
+            margin: auto
+        &-bottom
+            display: none
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 72px        
+            &--visible
+                display: block
+        &_menu
+            flex-direction: column
+            padding-top: 30px
+            &_link
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+            &_item
+                height: 15px
+        &-menu
+            &_item
+                max-width: 245px
+                &--mobile
+                    &_visible
+                        display: block
+        &_search
+            margin: 27px 0 37px 0
+    
+    .heder_menu_item
+        margin-bottom: 17px
+    .user_name
+        color: #fff
+        margin: 10px 0 0 0
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
     .menu
         &-button
             display: flex

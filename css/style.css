@@ -416,6 +416,10 @@ template {
   line-height: 18px;
 }
 
+.navbar-menu_item--mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1663,14 +1667,86 @@ template {
     max-width: 576px;
     width: 92%;
   }
+  body {
+    padding-top: 78px;
+  }
   .newsletter-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .navbar_menu, .navbar_search, .navbar_user {
+  .navbar--mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar_user--mobile_hidden, .navbar_search--mobile_hidden {
     display: none;
+  }
+  .navbar_user--mobile_visible, .navbar_search--mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar_user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 72px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 30px;
+  }
+  .navbar_menu_link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar_menu_item {
+    height: 15px;
+  }
+  .navbar-menu_item {
+    max-width: 245px;
+  }
+  .navbar-menu_item--mobile_visible {
+    display: block;
+  }
+  .navbar_search {
+    margin: 27px 0 37px 0;
+  }
+  .heder_menu_item {
+    margin-bottom: 17px;
+  }
+  .user_name {
+    color: #fff;
+    margin: 10px 0 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
   }
   .menu-button {
     display: -webkit-box;
