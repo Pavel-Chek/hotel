@@ -61,4 +61,24 @@ $(document).ready(function () {
     modalDialog.removeClass("modal_dialog--visible");
   }
 
-});
+  $('.phone_us').mask('+7 (000) 000-00-00');
+
+  $('.form').each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Specify a name",
+          minlength: "The name must be at least 2 letters long",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
+  })
+  });

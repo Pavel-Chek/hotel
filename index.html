@@ -175,7 +175,7 @@
                 <span class="newsletter-title_strong">Newsletter</span>
             </h2>
             <form action="send.php" method="POST" class="subscribe newsletter_subscribe">
-                <input type="text" name="email" class="subscribe_input" placeholder="Your email address">
+                <input required type="email" name="email" class="subscribe_input" placeholder="Your email address">
                 <button class="subscribe_button">Send</button>                                           
             </form>
         </div>
@@ -338,9 +338,13 @@
                 </div>
                 <div class="footer_contact-form">
                     <h3 class="footer_title footer_title_send">Send us a message</h3>
-                    <form action="send.php" method="POST" class="footer_form">
-                        <input type="text" name="name" class="input footer_input" placeholder="Your Full Name*">
-                        <input type="text" name="phone" class="input footer_input" placeholder="Phone Number*">
+                    <form action="send.php" method="POST" class="footer_form form">
+                        <div class="footer_input-group">
+                            <input minlength="2" required type="text" name="name" class="input footer_input" placeholder="Your Full Name*">
+                        </div>
+                        <div class="footer_input-group">
+                            <input required type="tel" name="phone" class="input footer_input phone_us" placeholder="Phone Number*">
+                        </div>
                         <textarea class="message footer_message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="button footer_button" type="submit">Send</button>
                         <span class="footer_info">* Required Fields</span>
@@ -364,49 +368,51 @@
         </div>
     </footer>
     <div class="modal" id="booking-modal">
-        <div class="modal_overlay">
-
-        </div>
-        <!-- /.modal_overlay -->
+        <div class="modal_overlay">        
         <div class="modal_dialog">
             <a href="#" class="modal_close">
                 <img src="img/close.svg" alt="close">
             </a>
             <h3 class="modal_title modal_title_send">Booking</h3>
-            <form action="send.php" method="POST" class="modal_form">
-                <input type="text" name="name" class="input modal_input" placeholder="Your Full Name*">
-                <input type="text" name="phone" class="input modal_input" placeholder="Phone Number*">
+            <form action="send.php" method="POST" class="modal_form form">
+                <input minlength="2" required type="text" name="name" class="input modal_input" placeholder="Your Full Name*">
+                <input required type="tel" name="phone" class="input modal_input phone_us" placeholder="Phone Number*">
+                <input required type="email" name="email" class="input modal_input" placeholder="Email*">
                 <textarea class="message modal_message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                 <button class="button modal_button" type="submit">Send</button>
                 <span class="modal_info">* Required Fields</span>
             </form>
         </div>
         <!-- /.modal_dialog -->
+        </div>
+        <!-- /.modal_overlay -->
     </div>
     <!-- /.modal -->
     <div class="modal" id="rating-modal">
-        <div class="modal_overlay">
-
-        </div>
-        <!-- /.modal_overlay -->
+        <div class="modal_overlay">        
         <div class="modal_dialog">
             <a href="#" class="modal_close">
                 <img src="img/close.svg" alt="close">
             </a>
             <h3 class="modal_title modal_title_send">Send us a feedback</h3>
-            <form action="send.php" method="POST" class="modal_form">
-                <input type="text" name="name" class="input modal_input" placeholder="Your Full Name*">
-                <input type="text" name="phone" class="input modal_input" placeholder="Phone Number*">
+            <form action="send.php" method="POST" class="modal_form form">
+                <input minlength="2" required type="text" name="name" class="input modal_input" placeholder="Your Full Name*">
+                <input required type="tel" name="phone" class="input modal_input phone_us" placeholder="Phone Number*">
+                <input required type="email" name="email" class="input modal_input" placeholder="Email*">
                 <textarea class="message modal_message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                 <button class="button modal_button" type="submit">Send</button>
                 <span class="modal_info">* Required Fields</span>
             </form>
         </div>
         <!-- /.modal_dialog -->
+        </div>
+        <!-- /.modal_overlay -->
     </div>
     <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

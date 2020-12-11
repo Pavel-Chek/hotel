@@ -168,6 +168,9 @@
                 margin-bottom: 30px
         &-bottom
             margin-top: 57px
+    .modal
+        &_dialog
+            padding: 22px 66px  
 @media ( max-width: 750px )
     .conteiner
         max-width: 576px
@@ -308,7 +311,13 @@
         padding-bottom: 60px
     .footer        
         &_input
-            flex-basis: 100%        
+            &-group
+                flex-basis: 100%   
+    .modal
+        &_dialog
+            width: 70%
+            height: 98%   
+            overflow: scroll    
 @media ( max-width: 576px )
     .logo
         width: 99px
@@ -504,3 +513,15 @@
                 margin: 0 6px 0 0
         &-right
             margin-top: 8px
+    .modal
+        &_input
+            max-height: 38px
+            margin-bottom: 10px
+        &_dialog
+            width: 95%
+            max-width: 300px
+            height: 90%
+            padding: 12px 40px
+            overflow: scroll
+        &_button
+            width: 100%
