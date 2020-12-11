@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
 </head>
@@ -170,11 +171,11 @@
     </section>
     <section class="newsletter">
         <div class="newsletter-wrapper">
-            <h2 class="newsletter-title">
+            <h2 class="newsletter-title" data-aos="fade-right" data-aos-duration="500">
                 subscribe to our
                 <span class="newsletter-title_strong">Newsletter</span>
             </h2>
-            <form action="send.php" method="POST" class="subscribe newsletter_subscribe">
+            <form action="send.php" method="POST" class="subscribe newsletter_subscribe" data-aos="fade-left" data-aos-duration="500">
                 <input required type="email" name="email" class="subscribe_input" placeholder="Your email address">
                 <button class="subscribe_button">Send</button>                                           
             </form>
@@ -243,21 +244,21 @@
         <div class="conteiner">
             <h2 class="activities_title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities_card">
+                <div class="card activities_card" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/Activ/activ-1.jpg" alt="The curious corner 
                     of chamarel" class="card_image">
                     <h3 class="card_title">The curious corner<br> 
                         of chamarel</h3>
                     <button class="card_button">Book Now</button>
                 </div>
-                <div class="card activities_card">
+                <div class="card activities_card" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/Activ/activ-2.jpg" alt="Gymkhana club golf
                     course" class="card_image">
                     <h3 class="card_title">Gymkhana club golf
                         course</h3>
                     <button class="card_button">Book Now</button>
                 </div>
-                <div class="card activities_card activities_card_three">
+                <div class="card activities_card activities_card_three" data-aos="fade-up" data-aos-delay="500">
                     <img src="img/Activ/activ-3.jpg" alt="Tamarind falls hiking
                     trip - full day
                     " class="card_image">
@@ -266,7 +267,7 @@
                         </h3>
                     <button class="card_button">Book Now</button>
                 </div>
-                <div class="card activities_card">
+                <div class="card activities_card" data-aos="fade-up" data-aos-delay="700">
                     <img src="img/Activ/activ-4.jpg" alt="The blue marine discovery
                     quest" class="card_image">
                     <h3 class="card_title">The&nbsp;blue&nbsp;marine&nbsp;discovery
@@ -336,7 +337,7 @@
                         <li class="footer_item footer_item-mb-2"><img class="footer_icon footer_icon_email" src="img/footer/email.svg" alt="">cherly.lawson@example.com</li>
                     </ul>
                 </div>
-                <div class="footer_contact-form">
+                <div class="footer_contact-form" data-aos="fade-left" data-aos-duration="700">
                     <h3 class="footer_title footer_title_send">Send us a message</h3>
                     <form action="send.php" method="POST" class="footer_form form">
                         <div class="footer_input-group">
@@ -413,6 +414,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
